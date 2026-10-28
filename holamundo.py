@@ -13,3 +13,12 @@ promedio=8.5
 print(type(promedio))
 
 print("Resultado de la suma: ",suma)
+
+nombre=input("Ingrese su nombre: ")
+print("Hola, ",nombre)
+
+edad=int(input("Ingrese su edad: "))
+print("Su edad es: ",edad)
+saldo=float(input("Ingrese su saldo: "))
+print("Su saldo es: ",saldo)
+
