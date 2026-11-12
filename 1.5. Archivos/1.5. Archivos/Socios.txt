@@ -1,0 +1,30 @@
+Persona 1: 
+    Nombre: Samuel
+    Apellido: Tobar
+    Edad: 18
+    ciudad: Totora 
+Persona 2: 
+    Nombre: Johncito
+    Apellido: Cabrera
+    Edad: 24
+    ciudad: Cuenca 
+Persona 3: 
+    Nombre: Santiago
+    Apellido: Rubio
+    Edad: 24
+    ciudad: Cuenca 
+Persona 4: 
+    Nombre: Diego
+    Apellido: Rojas
+    Edad: 19
+    ciudad: Hospital del niño y la muejr 
+Persona 5: 
+    Nombre: Kevin
+    Apellido: Cabrera
+    Edad: 27
+    ciudad: España 
+Persona 6: 
+    Nombre: Papas
+    Apellido: El mio
+    Edad: entre los dos, como 100
+    ciudad: Cuenca y españa
