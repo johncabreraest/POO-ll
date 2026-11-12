@@ -1,48 +1,43 @@
 #Recuperacion para un puntito en la lección
 
-def registrar_nombre():
-    """Opción 1 del menú principal: Guarda el nombre del usuario."""
-    global usuario_nombre
-    usuario_nombre = input("Ingrese su nombre: ").strip()
-    if usuario_nombre:
-        print(f"Hola, {usuario_nombre}, diviertete.\n")
-    else:
-        print("\n No pusiste nada, seras un invitado.\n")
+def saludar():
+    usuario_nombre= input("Ingurese su nombre: ")
+    print(f"\n¡Hola, {usuario_nombre}, diviertete.\n")
 
 def pregunta_1():
-    print("\n---Pregunta 1: Multiplicación de cadenas")
+    print("\nPregunta 1")
     print('Código: print("ab" * 3)')
     resultado = "ab" * 3
     print(f"Resultado de ejecución: {resultado}\n")
 
 def pregunta_2():
-    print("\n---Pregunta 2: Tipo de dato numérico")
+    print("\nPregunta 2")
     print('Código: print(type(10.0))')
     resultado = type(10.0)
     print(f"Resultado de ejecución: {resultado}\n")
 
 def pregunta_3():
-    print("\n---Pregunta 3: Diccionarios y método get")
+    print("\nPregunta 3")
     print('Código: socio = {"nombre": "Ana", "saldo": 120}; print(socio.get("correo", "Sin correo"))')
     socio = {"nombre": "Ana", "saldo": 120}
     resultado = socio.get("correo", "Sin correo")
     print(f"Resultado de ejecución: {resultado}\n")
 
 def pregunta_4():
-    print("\n---Pregunta 4: Longitud de lista dividida")
+    print("\nPregunta 4")
     print('Código: frase = "aprendo Python en TEC"; print(len(frase.split()))')
     frase = "aprendo Python en TEC"
     resultado = len(frase.split())
     print(f"Resultado de ejecución: {resultado}\n")
 
 def pregunta_5():
-    print("\n---Pregunta 5: Conversión a entero (truncado)")
+    print("\nPregunta 5")
     print('Código: print(int(9.99))')
     resultado = int(9.99)
     print(f"Resultado de ejecución: {resultado}\n")
 
 def pregunta_6():
-    print("\n---Pregunta 6: Condicionales anidados")
+    print("\nPregunta 6")
     print("Código analizado:")
     print("saldo = 350\nif saldo >= 1000:\n    print('Oro')\nelif saldo >= 100:\n    print('Plata')\nelse:\n    print('Básica')")
     saldo = 350
@@ -56,7 +51,7 @@ def pregunta_6():
     print()
 
 def pregunta_7():
-    print("\n---Pregunta 7: Bucle for con else")
+    print("\nPregunta 7")
     print("Código analizado:")
     print("for x in [2, 4, 6]:\n    if x == 7:\n        print('Encontrado')\n        break\n    else:\n        print('No encontrado')")
     print("Resultado de ejecución:")
@@ -69,7 +64,7 @@ def pregunta_7():
     print()
 
 def pregunta_8():
-    print("\n---Pregunta 8: Bucle con break y end")
+    print("\nPregunta 8")
     print("Código analizado:")
     print("for n in [1, 2, 3, 4]:\n    if n == 3:\n        break\n    print(n, end=' ')")
     print("Resultado de ejecución: ", end="")
@@ -80,7 +75,7 @@ def pregunta_8():
     print("\n")
 
 def pregunta_9():
-    print("\n---Pregunta 9: Range con paso")
+    print("\nPregunta 9")
     print('Código: for i in range(1, 10, 3): print(i, end=" ")')
     print("Resultado de ejecución: ", end="")
     for i in range(1, 10, 3):
@@ -88,7 +83,7 @@ def pregunta_9():
     print("\n")
 
 def pregunta_10():
-    print("\n---Pregunta 10: Range descendente")
+    print("\nPregunta 10")
     print('Código: for i in range(3, 0, -1): print(i, end=" ")')
     print("Resultado de ejecución: ", end="")
     for i in range(3, 0, -1):
@@ -96,7 +91,7 @@ def pregunta_10():
     print("\n")
 
 def pregunta_11():
-    print("\n---Pregunta 11: Tablas de multiplicar del 1-5 y del 1-10")
+    print("\nPregunta 11")
     print('Codigo: for i in range(1, 11): for j in range(1, 11): print(f"{i * j:4d}", end="") print()')
     print("Resultado de ejecución: ", end="")
     for i in range(1, 11):
@@ -104,8 +99,8 @@ def pregunta_11():
             print(f"{i * j:4d}", end="")
     print()
 
+#Menu  Preguntas
 def menu_preguntas():
-    """Opción 2 del menú principal: Despliega el submenú para escoger qué pregunta ejecutar."""
     while True:
         print("================================")
         print("       MENÚ DE PREGUNTAS        ")
@@ -124,7 +119,7 @@ def menu_preguntas():
         print("12. Ejecutar TODAS las preguntas")
         print("13. Volver al menú principal")
         
-        opc = input("Seleccione una opción (1-12): ").strip()
+        opc = input("Seleccione una opción (1-13): ").strip()
         
         if opc == "1": pregunta_1()
         elif opc == "2": pregunta_2()
@@ -158,15 +153,13 @@ def menu_preguntas():
             print("\n Vuelve a intentarlo :)\n")
 
 
-# PROGRAMA PRINCIPAL (Menú Interactivo)
-usuario_nombre = "Invitado"
+#Menú
 
 def main():
     while True:
         print("********************************")
         print("        MENÚ DE USUARIOS        ")
         print("********************************")
-        print(f"Usuario activo: {usuario_nombre}")
         print("1. Ingrese nombre")
         print("2. Menu de preguntas")
         print("3. Salir")
@@ -174,11 +167,11 @@ def main():
         opcion = input("Elija una opción (1-3): ").strip()
         
         if opcion == "1":
-            registrar_nombre()
+            saludar()
         elif opcion == "2":
             menu_preguntas()
         elif opcion == "3":
-            print(f"\n ¡Hasta la vista, {usuario_nombre} :)")
+            print(f"\n Nos vimos el martes :)")
             break
         else:
             print("Por favor ingrese 1, 2 o 3, no otro numero.\n")
