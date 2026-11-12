@@ -176,5 +176,4 @@ def main():
         else:
             print("Por favor ingrese 1, 2 o 3, no otro numero.\n")
 
-if __name__ == "__main__":
-    main()
+main()
