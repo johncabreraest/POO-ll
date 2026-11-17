@@ -2,4 +2,4 @@ Ana,9
 Luis,6
 María,8
 Pedro,5
-Sofía,10
+Sofia,10

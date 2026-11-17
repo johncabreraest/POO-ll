@@ -1,5 +1,8 @@
-arroz
-leche
-pan
-huevos
-queso
+Arroz
+Frijoles
+Aceite
+Azúcar
+Sal
+Azucar
+Café
+
