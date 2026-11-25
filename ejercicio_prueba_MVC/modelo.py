@@ -7,7 +7,6 @@ class Paquete:
 
     def reservar(self, cantidad: int) -> bool:
         if cantidad <= 0 or cantidad > self.cupos:
-            print(f"Error: solo hay {self.cupos} cupos.")
             return False
         self.cupos -= cantidad
         return True

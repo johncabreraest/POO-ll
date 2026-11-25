@@ -14,7 +14,7 @@ class Vista:
             precio = float(input("Precio: ").strip())
             cupos = int(input("Cupos: ").strip())
         except ValueError:
-            print("Error: ingrese valores numéricos válidos.")
+            self.error("Error: ingrese valores numéricos válidos.")
             return None
         return destino, precio, cupos
 
@@ -23,7 +23,7 @@ class Vista:
             codigo = int(input("Código del paquete: ").strip())
             cantidad = int(input("Cantidad de cupos: ").strip())
         except ValueError:
-            print("Error: ingrese valores numéricos válidos.")
+            self.error("Error: ingrese valores numéricos válidos.")
             return None
         return codigo, cantidad
 
@@ -31,5 +31,8 @@ class Vista:
         for paquete in paquetes:
             print(paquete)
 
-    def mostrar_mensaje(self, mensaje: str) -> None:
-        print(mensaje)
+    def mensaje(self, texto: str) -> None:
+        print(texto)
+
+    def error(self, texto: str) -> None:
+        print(texto)
